@@ -1,0 +1,15 @@
+{{extend 'layout.html'}}
+{{=BEAUTIFY(response._vars)}}
+<html>
+<head>
+<title>presentation</title>
+
+</head>
+{{for i in image_list:
+    image_url = i['file']}}
+    <body>
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="{{=URL(f = 'download', args=image_url)}}" alt="Smiley" width="32" height="32">
+
+</body>
+     <script src="{{=URL('static','js/test1.js')}}" type="text/javascript"></script>
+</html>

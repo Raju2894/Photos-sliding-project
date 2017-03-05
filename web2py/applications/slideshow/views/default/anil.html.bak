@@ -1,0 +1,11 @@
+{{extend 'layout.html'}}
+{{=BEAUTIFY(response._vars)}}
+
+<h1>Image: </h1>
+
+{{for i in image_list:
+    image_url = i['file']}}
+<img width="200px"
+     src="{{=URL(f = 'download', args=image_url)}}" />
+    <br><a href="{{=URL(f = 'download', args=image_url)}}">Download Link</a><br><br>
+    {{pass}}
