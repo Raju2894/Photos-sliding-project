@@ -1,0 +1,15 @@
+{{=BEAUTIFY(response._vars)}}
+<html>
+<h1>Image: </h1>
+<body bgcolor="#E6E6FA">
+    <div id="plse">
+{{for i in image_list:
+    image_url = i['file']}}
+        </div>
+        <img style="text-align:right" onmouseover="bigImg(this)" onmouseout="normalImg(this)" width="200px"
+     src="{{=URL(f = 'download', args=image_url)}}" />
+    <br><a href="{{=URL(f = 'download', args=image_url)}}">Download Link</a><br><br>
+    {{pass}}
+    </body>
+<script src="{{=URL('static','js/test1.js')}}" type="text/javascript"></script>
+</html>

@@ -1,0 +1,23 @@
+{{=BEAUTIFY(response._vars)}}
+<html>
+<body background="../Downloads/back.jpeg" style="background-repeat:no-repeat;background-size:cover;" >
+<div id="slides" style="display:block;width:500px;height:500px;position:fixed;left:400px;right:200px;top:30px;bottom:300px;">
+<section class="present" contenteditable="True" style="width:500px;height:500px;transform:none;">
+<!--<h1 style="position:relative;text-align:centre;">untitled</h1>-->
+<h1>Untitled </h1>
+<p></p>
+</section>
+</div>
+<button id="h" style="position:fixed;top:300px;right:0px;left:1000px;" onclick="horizontal()">
+ add </button>
+ <button id="navigate_left" onclick="left()" >left</button>
+ <button id="navigate_right" onclick="right()">right</button>
+ <button id="b" onclick="bold()"> B </button>
+ <button id="i" onclick="italic()"> I </button>
+ <button id="u" onclick="underline()"> U </button>
+ <button id="d" onclick="del()">delete</button>
+ <button onclick="upload()" >upload</button>
+</body>
+      <script src="{{=URL('static','js/test.js')}}" type="text/javascript"></script>
+
+</html>

@@ -1,0 +1,121 @@
+{{extend 'layout.html'}}
+{{=BEAUTIFY(response._vars)}}
+{{extend 'layout.html'}}
+<html>
+<title> project </title>
+    <body style="background-color:black;">
+<nav>
+<ul>
+<li><a href="home">Home</a></li>
+<li><a href="/about">About Us</a>
+<ul>
+<li><a href="kaja.html">kaja</a></li>
+<li><a href="raju.html">raju</a></li>
+<li><a href="/jahnavi">jahnavi</a></li>
+</ul>
+</li>
+<li><a href="/powerpoint">Powerpoint</a>
+<ul>
+<li><a href="/documentation">documentation</a></li>
+<li><a href="/presentation">presentation</a></li>
+<li><a href="/folder">folder</a></li>
+<li><a href="/spreadsheet">spreadsheet</a></li>
+<li><a href="/form">form</a></li>
+</ul>
+</li>
+<li><a href="/services">Slideshow</a>
+<ul>
+<li><a href="/pictures">pictures</a></li>
+<li><a href="/vedios">vedios sliding</a></li>
+</ul>
+</li>
+<li><a href="/contact">Contact</a>
+<ul>
+<li><a href="/email">Via Email</a></li>
+<li><a href="/phone-number">phone no</a></li>
+<li><a href="/facebook">facebook</a></li>
+</ul>
+</li>
+<li><a href="user.html">login</a>
+<ul>
+<li><a href="http://www.fb.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbknaOiRjiKJkL8jAKW3F6E4Kmq9zFMeowlp3SLQZpegyE_6e-MQ"></a></li>
+<br><br><br>
+<li><a href="http://www.gmail.com"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ007ymUse_Nw2vHgsTEDZKGfNyPTf0Cr4qqT-GAC339_S3eUcfuw"></a></li>
+<br><br><br>
+<li><a href="http://www.twitter.com"><img src="http://4.bp.blogspot.com/-f47tz1kLE3s/T95BrYBiGGI/AAAAAAAAG0M/BhEH1JMdggo/s320/twitter-3d-blue-logo-icon.png"></a></li>
+</ul>
+</li>
+</ul>
+</nav>
+<style>
+nav {
+        background-color:#2C5463;
+height:40px;
+}
+
+
+nav ul {
+        font-family: Arial, Verdana;
+        font-size: 20px;
+margin: 0;
+padding: 0;
+         list-style: none;
+}
+
+nav ul li {
+display: block;
+position: relative;
+float: left;
+
+}
+
+nav li ul {
+display: none;
+}
+
+nav ul li a {
+display: block;
+         text-decoration: none;
+padding: 7px 15px 3px 15px;
+background: #2C5463;
+color: #ffffff;
+       margin-left: 1px;
+       white-space: nowrap;
+height:30px; /* Width and height of top-level nav items */
+width:90px;
+      text-align:center;
+
+}
+
+nav ul li a:hover {
+background: #617F8A;
+}
+
+nav li:hover ul {
+display: block;
+position: absolute;
+height:30px;
+}
+
+nav li:hover li {
+float: none;
+       font-size: 11px;
+
+}
+
+nav li:hover a {
+background: #3A464F;
+height:30px; /* Height of lower-level nav items is shorter than main level */
+}
+
+nav li:hover li a:hover {
+background: #95A9B1;
+}
+
+nav ul li ul li a {
+        text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+}
+<h2>Number of visits: {{=count}}</h2>
+   </body>
+</style>
+</html>

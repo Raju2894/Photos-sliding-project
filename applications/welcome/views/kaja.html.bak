@@ -1,0 +1,13 @@
+{{extend 'layout.html'}}
+
+<html>
+    <head>
+        Kaja profile
+    </head>
+    <body style="background-color:green;">
+   <p style="font-color:yellow;">
+      this is kaja studying btech 1<sup>st</sup>year in iiit-hyd
+        branch---> cse
+    </p>
+               </body>
+</html>
